@@ -1,2 +1,2 @@
 # cal-app
-a 2016 cal app using polymer
+A Demo App Using Polymer, Gulp and Upup
