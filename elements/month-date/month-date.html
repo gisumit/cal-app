@@ -1,0 +1,34 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<dom-module id="month-date">
+	<style type="text/css">
+        *{
+            margin: 0px;
+            box-sizing: border-box;
+            font: 100% 'Eras ITC'; 
+        }
+		:host{
+            background-color: transparent;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            flex-direction: column;
+            float: right;
+            padding: 5px 10px;
+            border-right: 1px solid rgba(0, 0, 0, 0.2);
+        }
+        .day-box>h1,.day-box>h3{
+           width: 100%;
+           float: left;
+        }
+	</style>	
+	<template>
+		<content></content>        
+	</template>
+</dom-module>
+<script>
+	( function(){
+		Polymer({
+			is: 'month-date'
+		});
+	})();
+</script>

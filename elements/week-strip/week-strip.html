@@ -1,0 +1,24 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../month-date/month-date.html">
+<dom-module id ="week-strip">
+    <style is = "custom-style">
+        :host>.week-strip{
+            background-color: transparent;
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+        }
+    </style>
+    <template>
+        <div class="week-strip">
+            <content></content>
+        </div>
+    </template>
+</dom-module>
+<script>
+	( function(){
+		Polymer({
+			is: 'week-strip'
+		});
+	})();
+</script>

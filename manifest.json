@@ -1,0 +1,22 @@
+{
+    "name": "Calender 2016",
+    "short_name":"calender",
+    "icons": [{
+        "src": "images/icon-set/cal-192.png",
+        "sizes": "192x192",
+          "type":"image/png"
+    }{
+        "src": "images/icon-set/cal-384.png",
+        "sizes": "384x384",
+        "type":"image/png"
+      },{
+        "src": "images/icon-set/cal-512.png",
+        "sizes": "512x512",
+        "type":"image/png"
+      }],
+    "theme_color":"#f5f5f5",
+    "background_color": "#f5f5f5",
+    "orientation":"portrait",
+    "display": "standalone",
+    "version": "0.0.1"
+}

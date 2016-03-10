@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="leaf-let App" />
+    <title>Calender 2016 Web App</title>
+    <meta name="theme-color" content="#F0F2F3">
+
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#BAFC36">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Calender 2016 Web App">
+    <link rel="icon" sizes="192x192" href="images/icon-set/cal-192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Calender 2016 Web App">
+    <link rel="apple-touch-icon" href="images/icon-set/cal-152.png">
+
+    <!-- Tile icon for Win8 (144x144) -->
+    <meta name="msapplication-TileImage" content="images/icon-set/cal-144.png">
+    <style>
+    body {background-color: #F0F2F3; font-family: roboto;}app-month-page{height: 100vh;}.ref-day {opacity: 0.5;}
+        h1,h3 {width: 100%;float: right;font-weight: 100;margin: 0;direction: rtl;}
+.day-box>h3{font-weight: normal;font-size: 13px;}.holiday{background-color: rgba(237, 20, 61, 0.71);}
+month-date {width: calc(100% / 7);}.day-strip {display: flex;justify-content: center;width: calc(100% / 1);}
+@media all and (min-width: 300px) and (max-width: 800px){h3 {font-size: 10px;}h1 {font-size: 20px;}}
+    </style>
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.js" async></script>
+    <link rel="import" href="dist/elements/elements.html" async>
+</head>
+<body unresolved class="fullbleed layout vertical">
+	<template is="dom-bind" id="app">
+        <paper-toolbar>
+		    <paper-tabs id="scrollableTabs" noink select="0" scrollable
+             style="width: 100%; height:100%;"
+             selected="{{page}}" valueattr="month-name">
+              <paper-tab month-name="JANUARY">JANUARY</paper-tab>
+              <paper-tab month-name="FEBRUARY">FEBRUARY</paper-tab>
+              <paper-tab month-name="MARCH">MARCH</paper-tab>
+              <paper-tab month-name="APRIL">APRIL</paper-tab>
+              <paper-tab month-name="MAY">MAY</paper-tab>
+              <paper-tab month-name="JUNE">JUNE</paper-tab>
+              <paper-tab month-name="JULY">JULY</paper-tab>
+              <paper-tab month-name="AUGUST">AUGUST</paper-tab>
+              <paper-tab month-name="SEPTEMPER">SEPTEMPER</paper-tab>
+              <paper-tab month-name="OCTOBER">OCTOBER</paper-tab>
+              <paper-tab month-name="NOVEMBER">NOVEMBER</paper-tab>
+              <paper-tab month-name="DECEMBER">DECEMBER</paper-tab>
+            </paper-tabs>
+       </paper-toolbar>
+        <div fit layout verticle>
+           <iron-pages selected="{{page}}" valueattr="month-name">
+               <jan-month month-name="JANUARY"></jan-month>
+               <feb-month month-name="FEBRUARY"></feb-month>
+               <mar-month month-name="MARCH"></mar-month>
+               <apr-month month-name="APRIL"></apr-month>
+               <may-month month-name="MAY"></may-month>
+               <jun-month month-name="JUNE"></jun-month>
+               <jul-month month-name="JULY"></jul-month>
+               <aug-month month-name="AUGUST"></aug-month>
+               <sep-month month-name="SEPTEMPBER"></sep-month>
+               <oct-month month-name="OCTOBER"></oct-month>
+               <nov-month month-name="NOVEMBER"></nov-month>
+               <dec-month month-name="DECEMBER"></dec-month>
+            </iron-pages>
+        </div>
+	</template>
+	<script src="js/upup.min.js"></script>
+	<script>
+        UpUp.strart({
+            'content-url':'index.html',
+            'assets':['bower_components/webcomponentsjs/webcomponents-lite.js','dist/elements/elements.html']
+        });
+    </script>
+</body>
+</html>

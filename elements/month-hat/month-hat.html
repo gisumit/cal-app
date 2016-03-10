@@ -1,0 +1,22 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<dom-module id ="month-hat">
+    <style is = "custom-style">
+        :host>.month-hat{
+            display: flex;
+            flex-direction: column;
+            height: 98vh;
+        }
+    </style>
+    <template>
+        <div class="month-hat">
+             <content></content>           
+        </div>
+    </template>
+</dom-module>
+<script>
+	( function(){
+		Polymer({
+			is: 'month-hat'
+		});
+	})();
+</script>

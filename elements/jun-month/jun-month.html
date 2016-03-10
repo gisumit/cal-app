@@ -1,0 +1,72 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../app-month-page/app-month-page.html">
+<link rel="import" href="../month-hat/month-hat.html">
+<link rel="import" href="../day-strip/day-strip.html">
+<link rel="import" href="../week-strip/week-strip.html">
+<link rel="import" href="../month-date/month-date.html">
+<dom-module id ="jun-month">
+    <style is = "custom-style">
+       week-strip{
+            height: calc(80vh / 5);
+        } 
+    </style>
+    <template>
+        <app-month-page>
+            <month-hat>
+                <day-strip></day-strip>
+                <week-strip>
+                    <month-date class="ref-day"><h1>30</h1><h3></h3></month-date>
+                    <month-date class="ref-day"><h1>31</h1><h3></h3></month-date>
+                    <month-date><h1>1</h1><h3></h3></month-date>
+                    <month-date><h1>2</h1><h3></h3></month-date>
+                    <month-date><h1>3</h1><h3></h3></month-date>
+                    <month-date><h1>4</h1><h3></h3></month-date>
+                    <month-date class="holiday"><h1>5</h1><h3></h3></month-date>
+                </week-strip>
+                <week-strip>
+                    <month-date><h1>6</h1><h3></h3></month-date>
+                    <month-date><h1>7</h1><h3></h3></month-date>
+                    <month-date><h1>8</h1><h3></h3></month-date>
+                    <month-date><h1>9</h1><h3></h3></month-date>
+                    <month-date><h1>10</h1><h3></h3></month-date>
+                    <month-date><h1>11</h1><h3></h3></month-date>
+                    <month-date class="holiday"><h1>12</h1><h3></h3></month-date>
+                </week-strip>
+                <week-strip>
+                    <month-date><h1>13</h1><h3></h3></month-date>
+                    <month-date><h1>14</h1><h3></h3></month-date>
+                    <month-date><h1>15</h1><h3></h3></month-date>
+                    <month-date><h1>16</h1><h3></h3></month-date>
+                    <month-date><h1>17</h1><h3></h3></month-date>
+                    <month-date><h1>18</h1><h3></h3></month-date>
+                    <month-date class="holiday"><h1>19</h1><h3></h3></month-date>
+                </week-strip>
+                <week-strip>
+                    <month-date><h1>20</h1><h3></h3></month-date>
+                    <month-date><h1>21</h1><h3></h3></month-date>
+                    <month-date><h1>22</h1><h3></h3></month-date>
+                    <month-date><h1>23</h1><h3></h3></month-date>
+                    <month-date><h1>24</h1><h3></h3></month-date>
+                    <month-date><h1>25</h1><h3></h3></month-date>
+                    <month-date class="holiday"><h1>26</h1><h3></h3></month-date>
+                </week-strip>
+                <week-strip>
+                    <month-date><h1>27</h1><h3></h3></month-date>
+                    <month-date><h1>28</h1><h3></h3></month-date>
+                    <month-date><h1>29</h1><h3></h3></month-date>
+                    <month-date><h1>30</h1><h3></h3></month-date>
+                    <month-date class="ref-day"><h1>1</h1><h3></h3></month-date>
+                    <month-date class="ref-day"><h1>2</h1><h3></h3></month-date>
+                    <month-date class="holiday ref-day"><h1>3</h1><h3></h3></month-date>
+                </week-strip>
+            </month-hat>
+        </app-month-page>
+    </template>
+</dom-module>
+<script>
+	( function(){
+		Polymer({
+			is: 'jun-month'
+		});
+	})();
+</script>

@@ -1,0 +1,31 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<dom-module id="day-strip">
+	<style is="custom-style">
+		:host{
+            width: 98vw;
+            background-color: transparent;
+            display: flex;
+            justify-content: space-around;
+            height: 40px;
+            color:rgb(57, 77, 86);
+        }
+	</style>	
+	<template>
+		<div class="day-strip">
+            <div class="day-box"><p>Mo</p></div>
+            <div class="day-box"><p>Tu</p></div>
+            <div class="day-box"><p>We</p></div>
+            <div class="day-box"><p>Th</p></div>
+            <div class="day-box"><p>Fr</p></div>
+            <div class="day-box"><p>Sa</p></div>
+            <div class="day-box"><p>Su</p></div>
+        </div>
+	</template>
+</dom-module>
+<script>
+	( function(){
+		Polymer({
+			is: 'day-strip'
+		});
+	})();
+</script>

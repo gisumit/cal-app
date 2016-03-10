@@ -1,0 +1,37 @@
+year
+	month-> weeks(day-streep) -> days -> nation occassion
+					
+elements
+        
+     /* 
+	prop-7-days day-strip(sun,mon, ..etc)
+        month-week
+     	 days{ref-day, holiday-red}
+        week-day/* week-strip */{
+          	month-date, event["name":"value", "name":"value"]
+          }
+      */
+class
+ref-day
+holiday-red
+
+
+app build structure
+        date->week{weeks + day } -> month ->{ app-month-page } -> ***-month -> cal-app
+progrss--------------------------------------------------------->
+
+
+code build structure
+        ((((((((h1+h3)month-day)week-strip)+day-strip)month-hat)app-month-page)***-month)cal-app)
+
+Task BURN DOWN
+>>>END    app-month-page { images }
+>>>END    ***-month tag creation
+>>>END    ***-month filling dates + weeks + days
+>>>END    cal-app tag creation + app logo + manifest(verticle)
+>>>END    + mobile Support
+>>>END    + performance 
+          + OFFline support 
+          Host on github and firebase
+>>>END
+
